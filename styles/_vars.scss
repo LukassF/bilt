@@ -1,0 +1,11 @@
+$main: #f0eada;
+$secondary: #4c3f1a;
+
+$text-light: #f5f4f1;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

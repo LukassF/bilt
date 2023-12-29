@@ -1,0 +1,45 @@
+@use "./vars" as *;
+@use "./resets";
+@use "./landing";
+
+* {
+  resize: none;
+  background-color: $main;
+  font-family: "Neucha", cursive;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: grey transparent;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: grey;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+a,
+li,
+i {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

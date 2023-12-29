@@ -1,0 +1,179 @@
+@use "./vars" as *;
+
+main#landing {
+  header {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $secondary;
+    height: 100vh;
+    width: 100vw;
+    @include flex(column, center, center);
+    gap: 25px;
+    transition: height 1.1s cubic-bezier(0.87, 0.2, 0.4, 1);
+
+    img {
+      height: 100px;
+      transition: all 1.1s cubic-bezier(0.87, 0.2, 0.4, 1);
+      position: absolute;
+      left: 50%;
+      margin-top: -90px;
+      transform: translateX(-50%);
+
+      &.scrolled {
+        height: 56px;
+        left: 47px;
+        margin: 0;
+        transform: none;
+      }
+
+      @media screen and (max-width: 700px) {
+        &.scrolled {
+          height: 56px;
+
+          margin: 0;
+          //   transform: none;
+          left: 50% !important;
+          transform: translateX(-50%);
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        &.scrolled {
+          height: 40px;
+
+          margin: 0;
+          //   transform: none;
+          left: 50% !important;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0px 20px;
+
+      @media screen and (max-width: 550px) {
+        font-size: 1.5em;
+      }
+      position: absolute;
+      transition: opacity 0.3s;
+      margin-top: 90px;
+      color: $text-light;
+      background-color: transparent;
+      text-transform: uppercase;
+    }
+
+    ul {
+      padding: 0px;
+      padding: 10px 40px;
+      width: 50%;
+
+      @media screen and (max-width: 800px) {
+        width: 60%;
+      }
+
+      @media screen and (max-width: 700px) {
+        position: fixed;
+        @include flex(column, flex-start, stretch);
+        gap: 20px;
+        width: calc(100% - 80px);
+        height: calc(100vh - 180px);
+        border-top: solid $main 2px;
+        top: 95px;
+        padding: 40px;
+        background-color: $secondary;
+        transform: translateX(-100%);
+        transition: all 0.2s;
+        opacity: 0;
+
+        &.open {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      background-color: transparent;
+      list-style: none;
+      @include flex(row, space-between, center);
+      align-self: flex-end;
+
+      li {
+        background-color: transparent;
+        position: relative;
+
+        @media screen and (max-width: 700px) {
+          padding: 10px 0px;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 0px;
+            border-radius: 500px;
+            background-color: $text-light;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        a {
+          text-transform: uppercase;
+          color: $text-light;
+          font-size: 23px;
+
+          text-decoration: none;
+        }
+
+        &:last-child {
+          margin-left: 100px;
+
+          @media screen and (max-width: 1000px) {
+            margin-left: 0px;
+          }
+
+          @media screen and (max-width: 700px) {
+            margin-top: auto;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    #bars-menu {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      color: $text-light;
+      font-size: 3em;
+      border: none;
+      overflow: hidden;
+
+      i {
+        background-color: transparent;
+        opacity: 0.7;
+      }
+
+      @media screen and (max-width: 700px) {
+        @include flex(row, center, center);
+        cursor: pointer;
+        visibility: visible;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 2.5em;
+      }
+
+      visibility: hidden;
+    }
+  }
+
+  section {
+    min-height: 200vh;
+  }
+}
