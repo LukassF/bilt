@@ -2,6 +2,8 @@ $main: #f0eada;
 $secondary: #4c3f1a;
 
 $text-light: #f5f4f1;
+$text-dark: #2a230f;
+$button-color: #0081af;
 
 @mixin flex($direction, $justify, $align) {
   display: flex;

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f83777b1f5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+    <title>BILT/ O nas</title>
+  </head>
+  <body>
+    <main id="about">
+      <header id="main-header" class="no-anim">
+        <button id="bars-menu" onclick="openClose()">
+          <i class="fa fa-bars"></i>
+        </button>
+        <img
+          onclick="window.open('http://127.0.0.1:5500/','_self')"
+          class="scrolled"
+          src="../assets/logo.png"
+          alt="bilt-logo"
+          id="nav-logo"
+        />
+
+        <ul id="hrefs">
+          <li class="hrf"><a href="#">Produkty</a></li>
+          <li class="hrf"><a href="./public/about.html">O nas</a></li>
+          <li class="hrf"><a onclick="goTo('#contact')">Kontakt</a></li>
+
+          <li class="hrf">
+            <svg
+              width="41"
+              height="30"
+              viewBox="0 0 41 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="2361499_kingdom_uk_united_icon 2">
+                <path
+                  id="rect6883"
+                  d="M3.4557 0.848022C2.23888 0.848022 1.25928 1.5648 1.25928 2.45516V27.4965C1.25928 28.3869 2.23888 29.1037 3.4557 29.1037H20.6843H37.6789C38.8957 29.1037 39.8753 28.3869 39.8753 27.4965V2.45516C39.8753 1.5648 38.8957 0.848022 37.6789 0.848022H20.6843H3.4557Z"
+                  fill="#00247D"
+                />
+                <path
+                  id="path4589"
+                  d="M1.25928 5.58923V8.04888L17.6562 14.9758L1.25928 21.9027V24.3623L20.5673 16.2056L39.8753 24.3623V21.9027L23.4784 14.9758L39.8753 8.04888V5.58923L20.5673 13.746L1.25928 5.58923Z"
+                  fill="#CF142B"
+                />
+                <path
+                  id="path4587"
+                  d="M17.2466 0.848022V12.5461H1.25928V17.4055H17.2466V29.1037H20.6843H23.888V17.4055H39.8753V12.5461H23.888V0.848022H20.6843H17.2466Z"
+                  fill="#CF142B"
+                />
+                <path
+                  id="rect4572"
+                  d="M16.6009 0.848022V11.5249L1.25928 5.04371V6.13489L15.3171 12.0736H12.0778L1.25928 7.50328V8.59454L9.49479 12.0736H1.25928V13.0186H11.7317H14.3146H15.6576C16.5367 13.0186 17.0752 12.9917 17.8923 12.9917V12.0704V0.848022H16.6009ZM23.2422 0.848022V12.0704V13.0226C24.0303 13.0226 24.7652 13.0186 25.477 13.0186H26.82H29.4029H39.8753V12.0736H31.6398L39.8753 8.59454V7.50328L29.0568 12.0736H25.8175L39.8753 6.13489V5.04371L24.5337 11.5249V0.848022H23.2422ZM17.8923 16.9445C17.1479 16.9445 16.3692 16.9331 15.6574 16.9331H14.3145H11.7315H1.25928V17.878H9.49469L1.25928 21.3571V22.4483L12.0777 17.878H15.3171L1.25928 23.8167V24.9079L16.6009 18.4267V29.1037H17.8923V17.8812V16.9445ZM23.2422 16.9445V17.8812V29.1037H24.5337V18.4267L39.8753 24.9079V23.8167L25.8175 17.878H29.0569L39.8753 22.4483V21.3571L31.6399 17.878H39.8753V16.9331H29.4031H26.8201H25.4772C24.6606 16.9331 23.2422 16.9445 23.2422 16.9445Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+          </li>
+        </ul>
+      </header>
+
+      <section id="about-section">
+        <header id="subpages-header">
+          <button onclick="goBack()">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55 20.0625L49.9531 15L25 40L49.9531 65L55 59.9375L35.1094 40L55 20.0625Z"
+                fill="#2B230E"
+              />
+            </svg>
+          </button>
+
+          <article>
+            <div></div>
+            <h1>O NAS</h1>
+            <div></div>
+          </article>
+        </header>
+
+        <article id="who-are-we">
+          <h1>Kim jesteśmy?</h1>
+
+          <div id="inner-container">
+            <div></div>
+
+            <article>
+              <p>
+                <span>Nasze Przedsiębiorstwo działa od 1990 roku. </span>
+                <span>
+                  Jesteśmy firmą rodzinną zbudowaną w oparciu o kilkupokoleniowe
+                  doświadczenie zarówno w produkcji spożywczej jak i
+                  działalności handlowej.</span
+                >
+                <span
+                  >Od 1994 roku posiadamy status Zakładu Pracy Chronionej.
+                </span>
+                <span
+                  >Nasza Firma stara się spełniać oczekiwania swoich klientów,
+                  oferując im najwyższą jakość wyrobów i usług.
+                </span>
+              </p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <footer id="footer">
+        <ul>
+          <li>
+            <svg
+              width="40"
+              height="38"
+              viewBox="0 0 40 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_215_291)">
+                <path
+                  d="M11.0417 17.0921C13.4417 21.5729 17.3 25.2383 22.025 27.5183L25.6917 24.0271C26.15 23.5917 26.8083 23.465 27.3833 23.6392C29.25 24.225 31.2583 24.5417 33.3333 24.5417C34.2583 24.5417 35 25.2463 35 26.125V31.6667C35 32.5454 34.2583 33.25 33.3333 33.25C17.6833 33.25 5 21.2008 5 6.33333C5 5.45458 5.75 4.75 6.66667 4.75H12.5C13.425 4.75 14.1667 5.45458 14.1667 6.33333C14.1667 8.30458 14.5 10.2125 15.1167 11.9858C15.3 12.5321 15.1667 13.1575 14.7083 13.5929L11.0417 17.0921Z"
+                  fill="#4C3F1A"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_215_291">
+                  <rect width="40" height="38" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            +48 338 173 200
+          </li>
+          <li>
+            <svg
+              width="36"
+              height="38"
+              viewBox="0 0 36 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M33.3942 28.8635C33.411 28.8086 33.4225 28.7507 33.4225 28.6897V8.57226C33.4225 8.51092 33.411 8.4526 33.3938 8.39732C33.3913 8.38974 33.3899 8.38217 33.387 8.3746C33.364 8.30984 33.3303 8.25153 33.288 8.20041C33.2851 8.197 33.2847 8.19284 33.2819 8.18943C33.2801 8.18754 33.2779 8.18678 33.2761 8.18488C33.2309 8.13414 33.1775 8.09325 33.1176 8.06257C33.1129 8.0603 33.1093 8.05727 33.1047 8.055C33.048 8.02812 32.9863 8.01297 32.9214 8.00843C32.9149 8.00805 32.9088 8.00653 32.9023 8.00653C32.8962 8.00615 32.8909 8.00464 32.8848 8.00464H3.03662C3.03052 8.00464 3.02478 8.00615 3.01869 8.00653C3.01295 8.00691 3.00721 8.00805 3.00147 8.00843C2.93582 8.01297 2.87304 8.02849 2.81564 8.05576C2.81206 8.05727 2.80919 8.05992 2.8056 8.06144C2.74462 8.09211 2.69045 8.13376 2.64489 8.18526C2.6431 8.18716 2.64094 8.18754 2.63915 8.18943C2.63628 8.19246 2.63592 8.19662 2.63305 8.20003C2.59072 8.25115 2.55664 8.30984 2.53368 8.3746C2.53081 8.38217 2.52938 8.38974 2.52687 8.3977C2.50965 8.45298 2.49817 8.5113 2.49817 8.57264V28.6905C2.49817 28.7526 2.51001 28.8116 2.52758 28.8677C2.5301 28.8753 2.53153 28.8825 2.53404 28.89C2.55736 28.9552 2.5918 29.0138 2.63449 29.065C2.637 29.068 2.63771 29.0718 2.64023 29.0748C2.64238 29.0775 2.64525 29.079 2.64776 29.0816C2.66534 29.1009 2.68471 29.118 2.7048 29.1346C2.71377 29.1418 2.72166 29.1505 2.73098 29.1574C2.75466 29.1748 2.78013 29.1888 2.80632 29.2017C2.81278 29.2047 2.81851 29.2096 2.82497 29.2123C2.8899 29.2414 2.96129 29.2581 3.03626 29.2581H32.884C32.959 29.2581 33.0304 29.2418 33.0953 29.2123C33.1054 29.2077 33.1147 29.2009 33.1244 29.1956C33.1466 29.1839 33.1689 29.1718 33.1893 29.157C33.2001 29.149 33.2098 29.1388 33.2202 29.1301C33.2385 29.1146 33.2564 29.099 33.2722 29.0813C33.2751 29.0782 33.2783 29.0759 33.2812 29.0729C33.284 29.0695 33.2847 29.065 33.2876 29.0616C33.3296 29.0108 33.3633 28.9525 33.3863 28.8881C33.3899 28.8798 33.3916 28.8718 33.3942 28.8635ZM3.57472 9.86049L12.6316 18.5929L3.57472 27.395V9.86049ZM22.1376 18.165C22.1003 18.1908 22.0608 18.2124 22.0296 18.2487C22.0177 18.2624 22.0138 18.2801 22.0034 18.2945L17.9605 22.1925L4.42347 9.14026H31.4976L22.1376 18.165ZM13.4294 19.362L17.5975 23.3808C17.7004 23.48 17.8303 23.5296 17.9605 23.5296C18.0907 23.5296 18.2206 23.48 18.3232 23.3808L22.4396 19.412L31.495 28.1221H4.41558L13.4294 19.362ZM23.2378 18.6425L32.3463 9.86049V27.4041L23.2378 18.6425Z"
+                fill="#2B230E"
+              />
+            </svg>
+            biuro@bilt.com.pl
+          </li>
+        </ul>
+
+        <div>Copyright BILT © sp. z o. o</div>
+      </footer>
+    </main>
+    <script src="functions.js"></script>
+  </body>
+</html>
