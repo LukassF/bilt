@@ -541,33 +541,6 @@ main#landing section #about #about-inner-container article p {
     padding: 10px;
   }
 }
-main#landing section #about #about-inner-container article a {
-  text-decoration: none;
-  border: none;
-  padding: 10px 36px;
-  align-self: flex-start;
-  margin: 0px 20px;
-  background-color: #0081af;
-  color: #f5f4f1;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0.6px;
-  font-family: "Oxygen", sans-serif;
-  border-radius: 10.084px;
-  cursor: pointer;
-}
-@media screen and (max-width: 600px) {
-  main#landing section #about #about-inner-container article a {
-    margin: 0%;
-    margin-top: 20px;
-    align-self: center;
-  }
-}
-main#landing section #about #about-inner-container article a:hover {
-  background-color: rgb(18, 102, 136);
-}
 main#landing section #contact {
   margin: auto;
   margin-top: 100px;
@@ -673,34 +646,61 @@ main#landing section #contact #contact-right {
   overflow: hidden;
 }
 
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 10px 36px;
+  align-self: flex-start;
+  margin: 0px 20px;
+  background-color: #0081af;
+  color: #f5f4f1;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.6px;
+  font-family: "Oxygen", sans-serif;
+  border-radius: 10.084px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .btn {
+    margin: 0%;
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+.btn:hover {
+  background-color: rgb(18, 102, 136);
+}
+
 #about #about-section {
   padding-top: 114px;
-  min-height: 200vh;
 }
-#about #about-section #who-are-we {
+#about #about-section #who-are-we, #about #about-section #why-us, #about #about-section #our-enterprise {
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 600px) {
-  #about #about-section #who-are-we {
+  #about #about-section #who-are-we, #about #about-section #why-us, #about #about-section #our-enterprise {
     padding: 10px;
     padding-top: 60px;
   }
 }
-#about #about-section #who-are-we h1 {
+#about #about-section #who-are-we h1, #about #about-section #why-us h1, #about #about-section #our-enterprise h1 {
   font-family: Neucha;
-  font-size: 30px;
+  font-size: 33px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #2a230f;
   margin-bottom: 47px;
 }
-#about #about-section #who-are-we #inner-container {
+#about #about-section #who-are-we #inner-container, #about #about-section #why-us #inner-container, #about #about-section #our-enterprise #inner-container {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -712,40 +712,40 @@ main#landing section #contact #contact-right {
   align-items: center;
 }
 @media screen and (max-width: 1100px) {
-  #about #about-section #who-are-we #inner-container {
+  #about #about-section #who-are-we #inner-container, #about #about-section #why-us #inner-container, #about #about-section #our-enterprise #inner-container {
     width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
-  #about #about-section #who-are-we #inner-container {
+  #about #about-section #who-are-we #inner-container, #about #about-section #why-us #inner-container, #about #about-section #our-enterprise #inner-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
-#about #about-section #who-are-we #inner-container div {
+#about #about-section #who-are-we #inner-container div, #about #about-section #why-us #inner-container div, #about #about-section #our-enterprise #inner-container div {
   margin: 10px;
   background-color: black;
   height: 100%;
   min-height: 300px;
 }
 @media screen and (min-width: 900px) {
-  #about #about-section #who-are-we #inner-container div {
+  #about #about-section #who-are-we #inner-container div, #about #about-section #why-us #inner-container div, #about #about-section #our-enterprise #inner-container div {
     min-height: 200px;
     max-width: 627px;
   }
 }
 @media screen and (max-width: 600px) {
-  #about #about-section #who-are-we #inner-container div {
+  #about #about-section #who-are-we #inner-container div, #about #about-section #why-us #inner-container div, #about #about-section #our-enterprise #inner-container div {
     min-height: 200px;
   }
 }
-#about #about-section #who-are-we #inner-container article {
+#about #about-section #who-are-we #inner-container article, #about #about-section #why-us #inner-container article, #about #about-section #our-enterprise #inner-container article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#about #about-section #who-are-we #inner-container article p {
+#about #about-section #who-are-we #inner-container article p, #about #about-section #why-us #inner-container article p, #about #about-section #our-enterprise #inner-container article p {
   padding: 20px;
   font-family: "Oxygen", sans-serif !important;
   font-size: 20px;
@@ -761,10 +761,169 @@ main#landing section #contact #contact-right {
   gap: 20px;
 }
 @media screen and (max-width: 600px) {
-  #about #about-section #who-are-we #inner-container article p {
+  #about #about-section #who-are-we #inner-container article p, #about #about-section #why-us #inner-container article p, #about #about-section #our-enterprise #inner-container article p {
     font-size: 16px;
     padding: 10px;
   }
+}
+#about #about-section #our-enterprise #inner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  #about #about-section #our-enterprise #inner {
+    width: 100%;
+  }
+}
+#about #about-section #our-enterprise #inner article {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media screen and (max-width: 900px) {
+  #about #about-section #our-enterprise #inner article {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #about #about-section #our-enterprise #inner article {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+#about #about-section #our-enterprise #inner article div {
+  height: 230px;
+  background-color: black;
+}
+#about #about-section #our-enterprise #inner p {
+  padding: 20px;
+  padding-top: 40px;
+  font-family: "Oxygen", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  color: #4c3f1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media screen and (max-width: 600px) {
+  #about #about-section #our-enterprise #inner p {
+    font-size: 16px;
+    padding: 10px;
+    padding-top: 40px;
+  }
+}
+#about #about-section #our-enterprise a {
+  align-self: center !important;
+}
+#about #about-section #why-us {
+  padding-bottom: 100px;
+}
+#about #about-section #why-us #inner {
+  width: 80%;
+}
+@media screen and (max-width: 1250px) {
+  #about #about-section #why-us #inner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #about #about-section #why-us #inner {
+    width: 100%;
+  }
+}
+#about #about-section #why-us #inner ul {
+  padding: 20px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media screen and (max-width: 1000px) {
+  #about #about-section #why-us #inner ul {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #about #about-section #why-us #inner ul {
+    grid-template-columns: 1fr;
+    grid-row-gap: auto;
+  }
+}
+#about #about-section #why-us #inner ul li {
+  display: grid;
+  grid-template-rows: 0.8fr 0.5fr 2fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media screen and (max-width: 700px) {
+  #about #about-section #why-us #inner ul li {
+    grid-template-columns: 0.5fr 2.5fr;
+    grid-template-rows: max-content max-content;
+    gap: 0px;
+    grid-column-gap: 20px;
+  }
+  #about #about-section #why-us #inner ul li svg {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #about #about-section #why-us #inner ul li {
+    grid-row-gap: 20px;
+  }
+}
+#about #about-section #why-us #inner ul li svg {
+  margin: auto;
+}
+#about #about-section #why-us #inner ul li h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  #about #about-section #why-us #inner ul li h3 {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+#about #about-section #why-us #inner ul li p {
+  font-family: "Oxygen", sans-serif !important;
+  padding: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: 0.6px;
+}
+@media screen and (max-width: 700px) {
+  #about #about-section #why-us #inner ul li p {
+    font-size: 16px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 20px 0px;
+    margin-top: -40px;
+  }
+}
+#about #about-section #why-us #certificates {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 * {

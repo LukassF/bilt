@@ -85,6 +85,10 @@ function slideGalleryRight() {
       section_art.style.transition = "transform .5s";
       section_art.style.transform = `translateX(-${j * 100}vw)`;
     }, 10);
+
+    intervalId = setInterval(() => {
+      slideGalleryRightSlow();
+    }, 3000);
     return;
   }
   j++;
@@ -110,6 +114,10 @@ function slideGalleryLeft() {
       section_art.style.transform = "translateX(-400vw)";
       left_btn.disabled = false;
     }, 500);
+
+    intervalId = setInterval(() => {
+      slideGalleryRightSlow();
+    }, 3000);
     return;
   }
   j--;
